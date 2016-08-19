@@ -1,13 +1,10 @@
-﻿using RepositoryPattern.Core.DomainObjecs;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RepositoryPattern.Core.Repositories
+namespace RepositoryPattern.Repository
 {
     public abstract class EFRepositoryBase<TContext, TEntity, TKey> : IRepository<TEntity, TKey> where TEntity : class where TContext : DbContext
     {
