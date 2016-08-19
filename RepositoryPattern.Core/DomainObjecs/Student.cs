@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace RepositoryPattern.Core.DomainObjecs
 {
+    [Serializable]
     [Table("Student")]
-    public partial class Student
+    public partial class Student: IEntity<int>
     {
         [Key]
         public int Id { get; set; }
