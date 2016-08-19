@@ -9,7 +9,7 @@ namespace RepositoryPattern.EFSource
     [Table("Student")]
     public partial class Student
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key]
         public int Id { get; set; }
 
         [Required]

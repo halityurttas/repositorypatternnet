@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RepositoryPattern.Core
+namespace RepositoryPattern.Core.DomainObjecs
 {
-    public class Class1
+    public interface IEntity<TKey>
     {
+        TKey Id { get; set; }
     }
 }
