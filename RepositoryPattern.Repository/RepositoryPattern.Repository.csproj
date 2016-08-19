@@ -57,6 +57,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RepositoryPattern.Core\RepositoryPattern.Core.csproj">
+      <Project>{86ba04dd-c437-4ee2-b42e-c79fa99675fb}</Project>
+      <Name>RepositoryPattern.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
