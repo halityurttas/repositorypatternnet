@@ -8,8 +8,12 @@ using System.Threading.Tasks;
 
 namespace RepositoryPattern.Repository
 {
-    public class StudentXMLRepository: XMLRepositoryBase<XMLSet, Student, int>, IStudentRepository
+    public class StudentXMLRepository: XMLRepositoryBase<XMLSet<Student>, Student, int>, IStudentRepository
     {
+        public StudentXMLRepository()
+            :base("student.xml")
+        {
 
+        }
     }
 }

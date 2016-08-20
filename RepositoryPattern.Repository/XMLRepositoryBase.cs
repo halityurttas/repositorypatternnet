@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace RepositoryPattern.Repository
 {
-    public class XMLRepositoryBase<TContext, TEntity, TKey> : IRepository<TEntity, TKey> where TContext : class where TEntity : XMLSource.XMLSet<TEntity>
+    public class XMLRepositoryBase<TContext, TEntity, TKey> : IRepository<TEntity, TKey> where TContext : XMLSource.XMLSet<TEntity> where TEntity : class
     {
         private XMLSource.XMLSet<TEntity> m_context;
 
-        public XMLRepositoryBase()
+        public XMLRepositoryBase(string fileName)
         {
-            m_context = Activator.CreateInstance<XMLSource.XMLSet<TEntity>>();
+            m_context = new XMLSource.XMLSet<TEntity>(fileName);
         }
 
         public bool Delete(TKey id)
