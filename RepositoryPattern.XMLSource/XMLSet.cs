@@ -23,7 +23,14 @@ namespace RepositoryPattern.XMLSource
         {
             get
             {
-                if (m_models == null) Load();
+                try
+                {
+                    if (m_models == null) Load();
+                }
+                catch (Exception)
+                {
+                    m_models = new List<TModel>();
+                }
                 return m_models;
             }
             set
