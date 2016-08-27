@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RepositoryPattern.Core.DomainObjecs
+﻿namespace RepositoryPattern.Core.DomainObjecs
 {
     public interface IEntity<TKey>
     {
