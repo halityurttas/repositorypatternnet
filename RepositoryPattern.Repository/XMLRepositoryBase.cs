@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RepositoryPattern.Repository
 {
@@ -56,7 +54,7 @@ namespace RepositoryPattern.Repository
             {
                 return null;
             }
-            
+
         }
 
         public ICollection<TEntity> GetAll()
